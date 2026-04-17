@@ -1,0 +1,31 @@
+﻿  Skipping CUDA source file ..\..\..\Common\CUDA\mask_backprojection.cu (excluded from build).
+  Skipping CUDA source file test.cu (excluded from build).
+  Compiling CUDA source file ..\..\..\Common\CUDA\IRN_TV_CGLS.cu...
+  Skipping CUDA source file ..\..\..\Common\CUDA\Siddon_projection.cu (excluded from build).
+  Skipping CUDA source file ..\..\..\Common\CUDA\voxel_backprojection.cu (excluded from build).
+  
+  E:\github_upload\boslab-v2\C++\MatandMexProject\MatandMexProject>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu   -I"E:\github_upload\boslab-v2\Common\MattoC++" -I"E:\github_upload\boslab-v2\Common\MattoC++" -I"E:\github_upload\boslab-v2\Common\CUDA" -I"D:\Program Files\MATLAB\R2022a\extern\include\win64" -I"D:\Program Files\MATLAB\R2022a\extern\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -fmad=false -g  -D_USE_MATH_DEFINES -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o E:\github_upload\boslab-v2\C++\MatandMexProject\MatandMexProject\x64\Debug\IRN_TV_CGLS.cu.obj "E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu" 
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(952): warning #177-D: variable "gridSize_3Dproj" was declared but never referenced
+  
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning #177-D: variable "Px" was declared but never referenced
+  
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning #177-D: variable "Py" was declared but never referenced
+  
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning #177-D: variable "Pz" was declared but never referenced
+  
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1307): warning #550-D: variable "Pfinal" was set but never used
+  
+  IRN_TV_CGLS.cu
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(779): warning C4018: “<”: 有符号/无符号不匹配
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(851): warning C4018: “<”: 有符号/无符号不匹配
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1004): warning C4018: “<”: 有符号/无符号不匹配
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1148): warning C4018: “<”: 有符号/无符号不匹配
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1201): warning C4244: “=”: 从“_Rep”转换到“float”，可能丢失数据
+          with
+          [
+              _Rep=double
+          ]
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning C4101: “Pz”: 未引用的局部变量
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning C4101: “Px”: 未引用的局部变量
+E:\github_upload\boslab-v2\Common\CUDA\IRN_TV_CGLS.cu(1285): warning C4101: “Py”: 未引用的局部变量
+  MatandMexProject.vcxproj -> E:\github_upload\boslab-v2\C++\MatandMexProject\x64\Debug\MatandMexProject.exe

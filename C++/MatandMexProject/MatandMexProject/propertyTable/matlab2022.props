@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>matlab2022</_PropertySheetDisplayName>
+    <IncludePath>D:\Program Files\MATLAB\R2022b\extern\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files\MATLAB\R2022b\extern\lib\win64\microsoft;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program Files\MATLAB\R2022b\extern\include\win64;D:\Program Files\MATLAB\R2022b\extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Program Files\MATLAB\R2022b\extern\include;D:\Program Files\MATLAB\R2022b\extern\lib\win64;D:\Program Files\MATLAB\R2022b\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mclmcr.lib;mclmcrrt.lib;libmat.lib;libeng.lib;libmx.lib;libmex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>
+      </StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
