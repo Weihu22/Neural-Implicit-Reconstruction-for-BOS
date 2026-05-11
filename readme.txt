@@ -91,4 +91,4 @@ model = NeRFNetwork(
 # It should be noted that the encoding module is not implemented with CUDA acceleration.
 # As a result, hash-based encoding is significantly slower than frequency-based encoding.
 # A CUDA-accelerated version of the encoding will be released in the future.
-##
+
