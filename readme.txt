@@ -4,6 +4,8 @@ To facilitate reproducibility, we release the source code of this work, built up
 [1].Biguri A, Dosanjh M, Hancock S, et al. TIGRE: a MATLAB-GPU toolbox for CBCT image reconstruction[J]. Biomedical Physics & Engineering Express, 2016, 2(5): 055010. https://github.com/CERN/TIGRE
 [2].Tang J, Chen X, Wang J, et al. Compressible-composable nerf via rank-residual decomposition[J]. Advances in Neural Information Processing Systems, 2022, 35: 14798-14809. https://github.com/ashawkey/torch-ngp
 
+At present, the code does not support CPU-only execution. The ray integration and its backward-propagation operations were implemented exclusively as custom CUDA code, so an NVIDIA GPU with CUDA support is required to run the current version.
+
 
 % First run:
 %   1) step1_InitBOSLAB.m
