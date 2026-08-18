@@ -1,4 +1,37 @@
-This work presents a novel neural framework for reconstructing three-dimensional refractive-index fields from background-oriented schlieren measurements of flames. 10.1016/j.combustflame.2026.115082
+## License
+
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+The code may be used, modified, and distributed for noncommercial purposes,
+including academic, educational, and research use.
+
+**Commercial use is not permitted under this license.**
+For commercial licensing inquiries, please contact the authors.
+
+See the [LICENSE](LICENSE) file for details.
+
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+**X. Lu, W. Hu, Z. Liao, Z. Wang, Y. Zhang, J. Li,  
+Neural refractive index primitives for flame field reconstruction using background-oriented schlieren,  
+Combustion and Flame 290 (2026) 115082.**
+
+https://doi.org/10.1016/j.combustflame.2026.115082
+
+```bibtex
+@article{lu2026neural,
+  title   = {Neural refractive index primitives for flame field reconstruction using background-oriented schlieren},
+  author  = {Lu, Xinyi and Hu, Wei and Liao, Zizhou and Wang, Zheng and Zhang, Yue and Li, Jingxuan},
+  journal = {Combustion and Flame},
+  volume  = {290},
+  pages   = {115082},
+  year    = {2026},
+  doi     = {10.1016/j.combustflame.2026.115082}
+}
+
 
 To facilitate reproducibility, we release the source code of this work, built upon the CT discrete reconstruction implementation of Biguri et al. (TIGRE) [1] and the neural graphics primitives implementation of Tang et al. (iNGP) [2]. Many thanks to their works!
 [1].Biguri A, Dosanjh M, Hancock S, et al. TIGRE: a MATLAB-GPU toolbox for CBCT image reconstruction[J]. Biomedical Physics & Engineering Express, 2016, 2(5): 055010. https://github.com/CERN/TIGRE
