@@ -219,7 +219,9 @@ After training is completed, an additional figure will be displayed, showing the
 
 Close the figure to proceed to the next step.
 
-# It should be noted that the encoding module is not implemented with CUDA acceleration.
-# As a result, hash-based encoding is significantly slower than frequency-based encoding.
-# A CUDA-accelerated version of the encoding will be released in the future.
+**Note:** The encoding module is not implemented with CUDA acceleration.
+
+As a result, hash-based encoding is significantly slower than frequency-based encoding.
+
+A CUDA-accelerated version of the encoding will be released in the future.
 
