@@ -225,3 +225,8 @@ As a result, hash-based encoding is significantly slower than frequency-based en
 
 A CUDA-accelerated version of the encoding will be released in the future.
 
+## Note from the Authors
+
+This is the authors' first time using GitHub to publicly release research code, so the current code organization and general usability may not yet be ideal.
+
+If you encounter any problems or have questions about the implementation, please feel free to contact us. We greatly appreciate your feedback and understanding.
