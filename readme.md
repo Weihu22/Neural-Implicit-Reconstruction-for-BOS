@@ -33,27 +33,26 @@ https://doi.org/10.1016/j.combustflame.2026.115082
   doi     = {10.1016/j.combustflame.2026.115082}
 }
 ```
+## Important Notice
 
-```markdown
+### Limitation of the Current CGLS Implementation
+
+We have identified a mismatch between the forward and backward operators in the current CGLS-based reconstruction code. Specifically, `Ax` uses the **Siddon ray-tracing and interpolation operators**, whereas `A^T b` uses a **pseudo-matched backprojection weighting scheme**.
+
+Although the mismatch is typically below approximately **1%**, it can still affect CGLS convergence, potentially causing **non-convergence** and **artificial stripe-like artifacts near the reconstruction boundaries**.
+
+Based on our current tests, this implementation appears to be suitable mainly for **strictly radial and sufficiently dense multi-view configurations**. We currently do **not recommend it for limited-view or non-radial BOST configurations**.
+
+This issue has been addressed in our new **IRN-TV-CGLS** implementation. The updated BOST code, supporting **limited-view and non-radial view distributions**, will be released after the associated paper is published.
+
+**Note:** The **Neural Implicit Reconstruction for BOS** implementation does **not** suffer from this forward/backprojection mismatch issue and can still be used normally.
+
+
 To facilitate reproducibility, we release the source code of this work, built upon the CT discrete reconstruction implementation of Biguri et al. (TIGRE) [1] and the neural graphics primitives implementation of Tang et al. (iNGP) [2]. Many thanks to their works!
 [1].Biguri A, Dosanjh M, Hancock S, et al. TIGRE: a MATLAB-GPU toolbox for CBCT image reconstruction[J]. Biomedical Physics & Engineering Express, 2016, 2(5): 055010. https://github.com/CERN/TIGRE
 [2].Tang J, Chen X, Wang J, et al. Compressible-composable nerf via rank-residual decomposition[J]. Advances in Neural Information Processing Systems, 2022, 35: 14798-14809. https://github.com/ashawkey/torch-ngp
 
 At present, the code does not support CPU-only execution. The ray integration and its backward-propagation operations were implemented exclusively as custom CUDA code, so an NVIDIA GPU with CUDA support is required to run the current version.
-
-> [!WARNING]
-> ### Limitation of the Current CGLS Implementation
->
-> We have identified a mismatch between the forward and backward operators in the current CGLS-based reconstruction code. Specifically, \(Ax\) uses the **Siddon ray-tracing and interpolation operators**, whereas \(A^Tb\) uses a **pseudo-matched backprojection weighting scheme**.
->
-> Although the mismatch is typically below approximately **1%**, it can still affect CGLS convergence, potentially causing **non-convergence** and **artificial stripe-like artifacts near the reconstruction boundaries**.
->
-> Based on our current tests, this implementation appears to be suitable mainly for **strictly radial and sufficiently dense multi-view configurations**. We currently do **not recommend it for limited-view or non-radial BOST configurations**.
->
-> This issue has been addressed in our new **IRN-TV-CGLS** implementation. The updated BOST code, supporting **limited-view and non-radial view distributions**, will be released after the associated paper is published.
->
-> **Note:** The **Neural Implicit Reconstruction for BOS** implementation does **not** suffer from this forward/backprojection mismatch issue and can still be used normally.
-
 
 % First run:
 %   1) step1_InitBOSLAB.m
