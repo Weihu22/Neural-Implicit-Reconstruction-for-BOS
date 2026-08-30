@@ -77,6 +77,8 @@ For the first run:
 1. Run `step1_InitBOSLAB.m`
 2. Run `step2_Compile.m`
 
+   Compilation may fail because the header-file paths specified in the `.cu` or `.cpp` source files do not match the local installation paths. If this occurs, please follow the compiler error messages and update the corresponding header-file paths accordingly.
+   
 After successful compilation:
 
 Run `step1_InitBOSLAB.m`, then directly run:
