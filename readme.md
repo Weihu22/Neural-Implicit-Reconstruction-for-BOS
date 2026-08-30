@@ -48,9 +48,23 @@ This issue has been addressed in our new **IRN-TV-CGLS** implementation. The upd
 **Note:** The **Neural Implicit Reconstruction for BOS** implementation does **not** suffer from this forward/backprojection mismatch issue and can still be used normally.
 
 
-To facilitate reproducibility, we release the source code of this work, built upon the CT discrete reconstruction implementation of Biguri et al. (TIGRE) [1] and the neural graphics primitives implementation of Tang et al. (iNGP) [2]. Many thanks to their works!
-[1].Biguri A, Dosanjh M, Hancock S, et al. TIGRE: a MATLAB-GPU toolbox for CBCT image reconstruction[J]. Biomedical Physics & Engineering Express, 2016, 2(5): 055010. https://github.com/CERN/TIGRE
-[2].Tang J, Chen X, Wang J, et al. Compressible-composable nerf via rank-residual decomposition[J]. Advances in Neural Information Processing Systems, 2022, 35: 14798-14809. https://github.com/ashawkey/torch-ngp
+## Reference Implementations
+
+To facilitate reproducibility, this code was developed based in part on the following open-source implementations. We sincerely thank the authors for making their work publicly available.
+
+**[1] TIGRE**
+
+Biguri, A., Dosanjh, M., Hancock, S., et al.  
+*TIGRE: A MATLAB-GPU toolbox for CBCT image reconstruction.*  
+Biomedical Physics & Engineering Express, 2016, 2(5): 055010.  
+https://github.com/CERN/TIGRE
+
+**[2] torch-ngp**
+
+Tang, J., Chen, X., Wang, J., et al.  
+*Compressible-composable NeRF via rank-residual decomposition.*  
+Advances in Neural Information Processing Systems, 2022, 35: 14798–14809.  
+https://github.com/ashawkey/torch-ngp
 
 At present, the code does not support CPU-only execution. The ray integration and its backward-propagation operations were implemented exclusively as custom CUDA code, so an NVIDIA GPU with CUDA support is required to run the current version.
 
